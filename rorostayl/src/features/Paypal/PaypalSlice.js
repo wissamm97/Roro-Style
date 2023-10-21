@@ -19,7 +19,7 @@ export const ApproveOrder = createAsyncThunk(
           Authorization: `Bearer ${Token}`,
         },
       };
-      const response = await axios.put(`https://rorostorefinall.onrender.com/api/orders/pay/${id}`, order, config);
+      const response = await axios.put(`https://rorostyle.onrender.com/api/orders/pay/${id}`, order, config);
       console.log(response);
       return response.data;
     } catch (error) {

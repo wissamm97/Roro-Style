@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://rorostorefinall.onrender.com/api/orders/mine";
+const API_URL = "https://rorostyle.onrender.com/api/orders/mine";
 const getOrder = async (_, Token) => {
   const config = {
     headers: {

@@ -52,7 +52,7 @@ function OrderDetails() {
       },
     };
     const response = await axios.post(
-      "https://rorostorefinall.onrender.com/api/payment/checkout",
+      "https://rorostyle.onrender.com/api/payment/checkout",
       orderDetails,
       config
     );
@@ -71,7 +71,7 @@ function OrderDetails() {
       dispatch(resetPay());
     }
     const LoadPaypalScript = async () => {
-      const { data: clientId } = await axios.get("https://rorostorefinall.onrender.com/api/Keys/paypal", {
+      const { data: clientId } = await axios.get("https://rorostyle.onrender.com/api/Keys/paypal", {
         headers: { Authorization: `Bearer ${user.Token}` },
       });
       paypalDispatch({

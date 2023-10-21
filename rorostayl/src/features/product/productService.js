@@ -1,6 +1,6 @@
 import axios from "axios";
-const URL_API = "https://rorostorefinall.onrender.com/api/admin/";
-const API_URL_DETAILS = "https://rorostorefinall.onrender.com/api/admin/product/details/";
+const URL_API = "https://rorostyle.onrender.com/api/admin/";
+const API_URL_DETAILS = "https://rorostyle.onrender.com/api/admin/product/details/";
 // Get All Prodcut
 const getallproduct = async () => {
   const response = await axios.get(URL_API + "allproduct");

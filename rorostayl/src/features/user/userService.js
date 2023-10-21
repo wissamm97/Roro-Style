@@ -1,18 +1,18 @@
 import axios from "axios";
 const API_URL_Verify =
-  "https://rorostorefinall.onrender.com/api/user/verifyEmail";
-const API_URL_CONFIRM = "https://rorostorefinall.onrender.com/api/user/confirm";
-const API_URL = "https://rorostorefinall.onrender.com/api/user/register";
-const API_LOGINGOOGLE_URL = "https://rorostorefinall.onrender.com/auth/google/";
-const API_MESSAGE = "https://rorostorefinall.onrender.com/api/user/contact";
-const API_URL_Login = "https://rorostorefinall.onrender.com/api/user/login";
-const API_URL_ADDRESS = "https://rorostorefinall.onrender.com/api/user/adress";
-const API_URL_MEADDRESS = "https://rorostorefinall.onrender.com/api/user/getme";
-const API_URL_UPDATE = "https://rorostorefinall.onrender.com/api/user/profile";
+  "https://rorostyle.onrender.com/api/user/verifyEmail";
+const API_URL_CONFIRM = "https://rorostyle.onrender.com/api/user/confirm";
+const API_URL = "https://rorostyle.onrender.com/api/user/register";
+const API_LOGINGOOGLE_URL = "https://rorostyle.onrender.com/auth/google/";
+const API_MESSAGE = "https://rorostyle.onrender.com/api/user/contact";
+const API_URL_Login = "https://rorostyle.onrender.com/api/user/login";
+const API_URL_ADDRESS = "https://rorostyle.onrender.com/api/user/adress";
+const API_URL_MEADDRESS = "https://rorostyle.onrender.com/api/user/getme";
+const API_URL_UPDATE = "https://rorostyle.onrender.com/api/user/profile";
 const API_URL_RESET_PASSWORD =
-  "https://rorostorefinall.onrender.com/api/user/reset-password";
+  "https://rorostyle.onrender.com/api/user/reset-password";
 const API_URL_CHANGE_PASSWORD =
-  "https://rorostorefinall.onrender.com/api/user/change-password";
+  "https://rorostyle.onrender.com/api/user/change-password";
 // Register
 const register = async (user) => {
   const response = await axios.post(API_URL, user);
@@ -56,7 +56,7 @@ const loginGoogle = async () => {
 
 const getUser = async () => {
   const response = await axios.get(
-    "https://rorostorefinall.onrender.com/auth/login/success",
+    "https://rorostyle.onrender.com/auth/login/success",
     { withCredentials: true }
   );
   console.log(response.data);
@@ -131,8 +131,8 @@ const logout = async () => {
   // localStorage.removeItem("paymentMethod");
   // localStorage.removeItem("CartItem");
   // localStorage.removeItem("favouriteItem");
-  // return await axios.get("https://rorostorefinall.onrender.com/auth/logout");
-  window.open("https://rorostorefinall.onrender.com/auth/logout", "_self");
+  // return await axios.get("https://rorostyle.onrender.com/auth/logout");
+  window.open("https://rorostyle.onrender.com/auth/logout", "_self");
   localStorage.removeItem("user");
   localStorage.removeItem("ShipingAddress");
   localStorage.removeItem("paymentMethod");

@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 const API_URL_PAID = "/order/6484fc080406ddaa4b9ed6b2/payment/success";
-const API_URL_SECERT = "https://rorostorefinall.onrender.com/api/Keys/stripe";
+const API_URL_SECERT = "https://rorostyle.onrender.com/api/Keys/stripe";
 
 const initialState = {
   data_url: [],
@@ -49,7 +49,7 @@ export const PaidSuccess = createAsyncThunk('paid/Success',async(id,thunkAPI)=>{
         Authorization: `Bearer ${Token}`,
       },
     };
-    const response = await axios.get(`https://rorostorefinall.onrender.com/api/payment/${id}/payment/success`,config)
+    const response = await axios.get(`https://rorostyle.onrender.com/api/payment/${id}/payment/success`,config)
   console.log(response.data);
   } catch (error) {
     const message =

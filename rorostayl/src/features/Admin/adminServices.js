@@ -1,15 +1,15 @@
 import axios from "axios";
-const API_URL_LOGIN = "https://rorostorefinall.onrender.com/api/admin/login";
-const API_URL = "https://rorostorefinall.onrender.com/api/admin/alluser";
-const API_URL_ORDERS = "https://rorostorefinall.onrender.com/api/admin/allorders";
-const API_URL_PRODUCTS = "https://rorostorefinall.onrender.com/api/admin/allproduts";
-const API_URL_USER = "https://rorostorefinall.onrender.com/api/admin/user";
-const API_URL_USER_DETIALS = "https://rorostorefinall.onrender.com/api/admin/user/detials";
-const API_URL_ORDER = "https://rorostorefinall.onrender.com/api/admin/order";
-const API_URL_ORDER_DELIVERED = "https://rorostorefinall.onrender.com/api/admin/order/delivered/";
-const API_URL_PRODUCT = "https://rorostorefinall.onrender.com/api/admin/product";
-const API_URL_PRODUCT_DELETE = "https://rorostorefinall.onrender.com/api/admin/product";
-const API_URL_PRODUCT_CREATE = "https://rorostorefinall.onrender.com/api/admin/createproduct";
+const API_URL_LOGIN = "https://rorostyle.onrender.com/api/admin/login";
+const API_URL = "https://rorostyle.onrender.com/api/admin/alluser";
+const API_URL_ORDERS = "https://rorostyle.onrender.com/api/admin/allorders";
+const API_URL_PRODUCTS = "https://rorostyle.onrender.com/api/admin/allproduts";
+const API_URL_USER = "https://rorostyle.onrender.com/api/admin/user";
+const API_URL_USER_DETIALS = "https://rorostyle.onrender.com/api/admin/user/detials";
+const API_URL_ORDER = "https://rorostyle.onrender.com/api/admin/order";
+const API_URL_ORDER_DELIVERED = "https://rorostyle.onrender.com/api/admin/order/delivered/";
+const API_URL_PRODUCT = "https://rorostyle.onrender.com/api/admin/product";
+const API_URL_PRODUCT_DELETE = "https://rorostyle.onrender.com/api/admin/product";
+const API_URL_PRODUCT_CREATE = "https://rorostyle.onrender.com/api/admin/createproduct";
 // login Admin
 const login = async (adminData) => {
   const response = await axios.post(API_URL_LOGIN, adminData);
