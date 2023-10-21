@@ -1,0 +1,26 @@
+.empty {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+}
+.empty .container.empty {
+
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.empty a {
+    font-size: 3rem;
+    color: #e57ac1fa  !important;
+}
+.empty svg {
+    position: absolute;
+    z-index: -1;
+    font-size: 10rem;
+    color: #cccccc75;
+}

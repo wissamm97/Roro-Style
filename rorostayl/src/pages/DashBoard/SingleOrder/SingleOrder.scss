@@ -1,0 +1,135 @@
+.single {
+  display: flex;
+  width: 100%;
+
+  .singleContainer {
+    flex: 6;
+
+    .content-main {
+      padding: 30px 3%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .content-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, .125);
+      border-radius: 0.25rem;
+
+      .Header-green {
+        background-color: #6439ff;
+      }
+
+      .icontext {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px;
+
+      }
+
+      .icon-lg,
+      .icon-md,
+      .icon-sm,
+      .icon-xs {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+
+      .icontext .icon {
+        position: relative;
+        flex-shrink: 0;
+        margin-right: 10px;
+      }
+
+      .icon-sm {
+        width: 48px;
+        height: 48px;
+        line-height: 48px !important;
+        font-size: 20px;
+      }
+
+      .table thead th {
+        color: #adb5bd;
+        font-weight: 400;
+      }
+
+      .table-lg td,
+      .table-lg th {
+        padding: 0.8rem 1rem;
+      }
+
+      tbody tr {
+        border-bottom: 1px solid #cfdbe6;
+      }
+
+      a.itemside {
+        color: #000;
+        color: initial;
+        text-decoration: none;
+      }
+
+      .itemside {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
+
+      .itemside .aside,
+      .itemside .left {
+        position: relative;
+        flex-shrink: 0;
+      }
+
+      .itemside .info {
+        padding-left: 15px;
+        padding-right: 7px;
+
+        .itemside .info {
+          padding-left: 15px;
+          padding-right: 7px;
+        }
+      }
+
+      .box {
+        padding: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid rgba(108, 117, 125, .2);
+        background: #fff;
+      }
+    }
+  }
+}
+
+$mobile: 600px;
+
+@media screen and (max-width: $mobile) {
+  .card-header {
+    flex-direction: column;
+
+    .card-mobile {
+      flex-direction: column;
+
+      .text-white {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
