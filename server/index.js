@@ -24,7 +24,8 @@ app.use(express.urlencoded({ extended: true }));
 // Use the cors middleware to allow requests from specific origins
 app.use(
   cors({
-    origin: "https://rorostore.netlify.app",
+    origin: "https://roro-style.vercel.app",
+    // origin: "https://rorostore.netlify.app",
     credentials: true, // If you need to include credentials like cookies
   })
 );
