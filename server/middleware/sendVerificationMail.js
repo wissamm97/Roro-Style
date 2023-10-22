@@ -7,7 +7,7 @@ const sendVerificationMail = (user) => {
     to: user.email,
     subject: "Verify your Email...",
     html: `<p> Hello ${user.name}, Verify your email by Clicking this Link...</p>
-        <a href='https://rorostore.netlify.app/verified-email?emailToken=${user.emailToken}'>Verify your Email</a>
+        <a href='https://roro-style.vercel.app/verified-email?emailToken=${user.emailToken}'>Verify your Email</a>
         `,
   };
 

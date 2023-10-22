@@ -7,7 +7,7 @@ const sendResetPassword = (user) => {
     to: user.email,
     subject: "Reset Your Password",
     html: `<p> Hello ${user.name},Clicking this Link To Create a new password</p>
-        <a href='https://rorostore.netlify.app/change-password?emailToken=${user.emailToken}'>Verify your Email</a>
+        <a href='https://roro-style.vercel.app/change-password?emailToken=${user.emailToken}'>Verify your Email</a>
         `,
   };
 

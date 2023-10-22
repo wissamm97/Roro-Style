@@ -15,7 +15,7 @@ router.get("/logout", (req, res) => {
   req.logout();
   req.session = null; // Clear the session data
   res.clearCookie("Google Test");
-  res.redirect("https://rorostore.netlify.app");
+  res.redirect("https://roro-style.vercel.app");
 });
 router.get(
   "/google",
@@ -38,7 +38,7 @@ router.get(
         const isVerified = userFound?.isVerified;
         const Token = geneToken(userFound.id);
         res.redirect(
-          `https://rorostore.netlify.app?id=${_id}&email=${email}&name=${name}&Token=${Token}&emailToken=${emailToken}&Verified=${isVerified}`
+          `https://roro-style.vercel.app?id=${_id}&email=${email}&name=${name}&Token=${Token}&emailToken=${emailToken}&Verified=${isVerified}`
         );
       }
     } else {

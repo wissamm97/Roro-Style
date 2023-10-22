@@ -8,7 +8,7 @@ passport.use(
       clientID:
         "950856591792-qlkf18tc453ggiuftnpq7ubsq0pi8c28.apps.googleusercontent.com",
       clientSecret: "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",
-      callbackURL: "https://rorostorefinall.onrender.com/auth/google/callback",
+      callbackURL: "https://rorostyle.onrender.com/auth/google/callback",
       scope: ["profile", "email"],
     },
     (accessToken, refreshToken, profile, done) => {
