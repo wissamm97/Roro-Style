@@ -7,7 +7,7 @@ const createMailTransporter = () => {
     port: 465,
     auth: {
       user: "wissamabdalwhab.97@gmail.com",
-      pass: "qvxjtawoizsfncfp",
+      pass: "tzvm idcn jyro atof",
     },
   });
   return transport;
